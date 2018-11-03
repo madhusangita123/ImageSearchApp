@@ -5,6 +5,6 @@
 - App uses Paging library from android architecture components to load image search result page by page.
 - App follows Android developer guide to app architecture.
 - Below is to show how Activity gets it's data from
-	-MainActivity-PhotosViewModel-PhotoCollectionSource-NetworkSource-Webservice
+	MainActivity-PhotosViewModel-PhotoCollectionSource-NetworkSource-Webservice
 - ImageLoader class from challenge.coding.uber.imagesearchapp.imageloader package downloads the image from URL and caches the image in memory.
 -MemoryCache class uses LruCache for image chaching.
