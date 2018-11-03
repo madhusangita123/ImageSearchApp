@@ -7,7 +7,7 @@
 - Below is to show how Activity gets it's data from
 	MainActivity-PhotosViewModel-PhotoCollectionSource-NetworkSource-Webservice
 - ImageLoader class from challenge.coding.uber.imagesearchapp.imageloader package downloads the image from URL and caches the image in memory.	
--MemoryCache class uses LruCache for image chaching.
--PhotoClassTest is Junit test to test Photo model class.
--JsonParserTest from android test to test parseResponse method of JsonParser.
--MainActivityTest to test MainActivity.
+- MemoryCache class uses LruCache for image chaching.
+- PhotoClassTest is Junit test to test Photo model class.
+- JsonParserTest from android test to test parseResponse method of JsonParser.
+- MainActivityTest to test MainActivity.
