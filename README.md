@@ -11,3 +11,4 @@
 - PhotoClassTest is Junit test to test Photo model class.
 - JsonParserTest from android test to test parseResponse method of JsonParser.
 - MainActivityTest to test MainActivity.
+- You can find the apk inside ImageSearchApp/apk folder.
