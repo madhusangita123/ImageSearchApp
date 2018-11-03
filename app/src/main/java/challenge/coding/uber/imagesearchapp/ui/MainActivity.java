@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity implements NetworkChangeRece
         mPhotosAdapter = new PhotoListAdapter( this);
         mPhotoListView.setAdapter(mPhotosAdapter);
 
-        loadInitialPhotos();
         mImageSearchBar = findViewById( R.id.image_search_bar );
         mImageSearchBar.setOnQueryTextListener( new SearchView.OnQueryTextListener() {
             @Override
@@ -76,9 +75,9 @@ public class MainActivity extends AppCompatActivity implements NetworkChangeRece
             }
         } );
 
-
         mreciever = new NetworkChangeReceiver(this);
 
+        loadInitialPhotos();
     }
 
     @Override
@@ -96,7 +95,10 @@ public class MainActivity extends AppCompatActivity implements NetworkChangeRece
     }
 
     private void loadInitialPhotos(){
-      loadSearchResult(AppConstants.INITIAL_PHOTO_ITEM);
+        mImageSearchBar.setQuery(AppConstants.INITIAL_PHOTO_ITEM,true  );
+        mImageSearchBar.setIconified( false );
+        mImageSearchBar.clearFocus();
+      //loadSearchResult(AppConstants.INITIAL_PHOTO_ITEM);
     }
 
     private void loadSearchResult(String searchText){
